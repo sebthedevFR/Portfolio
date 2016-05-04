@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- ==========================
+    	Meta Tags 
+    =========================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ==========================
+    	Title 
+    =========================== -->
+    <title>Blog | Sébastien Toursel</title>
+    
+    <!-- ==========================
+    	Favicons 
+    =========================== -->
+    <link rel="shortcut icon" href="icons/favicon.ico   ">
+	<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png">
+    
+    <!-- ==========================
+    	Fonts 
+    =========================== -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lilita+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  
+
+    <!-- ==========================
+    	CSS 
+    =========================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/creative-brands.css" rel="stylesheet" type="text/css">
+    <link href="css/vertical-carousel.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    
+    <!-- ==========================
+    	JS 
+    =========================== -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body id="page-top">
+	<a href="#page-top" class="scroll-up scroll"><i class="fa fa-chevron-up"></i></a>
+    <h1>Freelancer</h1>
+	
+    <div id="date" class="date-big">
+        <p>23.</p>
+        <p class="month">Nov</p>
+    </div>	
+    
+    <!-- ==========================
+    	HEADER - START 
+    =========================== -->
+    <section id="blog-header">
+		<div class="container">
+            <div class="row">
+                    <div class="col-sm-4 col-xs-6">
+                       <a href="index.html"><i class="fa fa-arrow-left arrow-left"></i> HOME</a>
+                    </div>
+                    
+                    <div class="col-sm-4">    
+                    </div>
+                    
+                    <div class="col-sm-4 col-xs-6">
+                        <div class="blog-header-menu-right">
+                           <a href="index.html">NEXT ARTICLE <i class="fa fa-arrow-right arrow-right"></i></a>
+                        </div>
+                    </div>  	
+            </div>
+		</div>
+    </section>
+    <!-- ==========================
+    	HEADER - END 
+    =========================== -->
+    <!-- ==========================
+    	BLOGPOST - START 
+    =========================== -->
+    <section id="blog-post">
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-9 blog-content">
+                        <h2>The things I learned while making my very own simple text adventure game.</h2>
+                        <p class="date-small">2015/11/23<p>
+                        <img src="image/ref2.png" class="img-responsive pull-left">
+                        <p>I’ve been spending the better part of my October holidays building my first game with the knowledge I had from my first six weeks as a student at uni in computer sciences. Now of course it took some preparation ad determination. You see I’m not a finisher, well, I’ve never been one until today, I often catch myself starting something, a project, a book, a series anything, and never finishing it. I would always tell myself there was no point or that I was ‘wasting my time’ and therefore did not feel that good about myself.</p><p>The idea of a text adventure game came in the car on the way back home after a trip to my grandmothers, I was in the front seat and my brothers books where at my feet and while looking through them I found this Goosebump book at it reminded me of back in the day when I used to read adventure novels that would let you ‘choose your own adventure’. At the end of each pages you would have to pick a choice in your actions for example: ‘ To go right, go to page 43’ ‘ To look around the room, go to page 85’. And I wondered if you could make a game on those bases, and I realized … I knew how to do these things ! With the C# knowledge of Console.WriteLine, Variables, If/Else and a basic understanding of loops, I could make my very own ‘choose your adventure’ story and game, and so its started.</p> <p>I was busy the next day and was nowhere near a computer but boy was I thinking about it, the plot, the characters, the enemies, maybe a map or an inventory … my brain was busing. When I finally got to sit down I knew approximately what I wanted: My game would be a dungeon crawler, the player would start at the entrance of the dungeon with a short description about why he was here, once inside the player had to tap out the actions he wanted his character to do ‘go north’ ‘look at wall’ are a few examples. As soon as I started I realized it was going to be a bit harder than expected, and I was going to need some help, so I looked through the 7 realms of the internet to find someone who had had the same idea as me, and so I stumbled about this a 1 month assignment about making your own game, now I wasn’t interested In the assignment but I was interested in the way this person made an Inventory for his character, it was mind blowing to me that you could do all of this in c#. And so thanks to this example, I was able to start my game with a solid base. (So thank you Lincoln Li)</p><p>Now there is one thing that stands out after spending a week making a text adventure game to me, you will spend maybe 20% of your time implementing and writing what you set yourself out to do, and 80% of your time fixing things you had no idea existed in the first place. ( Omg SoundPlayer, why won’t you play two sounds at the same time … why ? You’re a cruel mistress SoundPlayer … ) You are also going to spend a lot of time implementing things that the users will never see or think about, for example, I spend an entire afternoon writing else if’s so that if the player looked at an item in his inventory or around him, he would have a small description of the what he was looking at, so lets say, if the player tipped in ‘look potion’ he would get this as a response: ‘Its a flask with red liquid in it. Said to heal all wounds if drank. A mage sold you this for a couple of goblin toes in the nearby village.’.</p><p>After playing around for a couple of days I finally had something that was kind of playable, the first area was build, where the player has to figure out how to get through the corridor that is blocked by cobwebs and so had to use his torch or his sword to get trough. I grabbed my little brother and sat him down in front of my laptop, he was exited at the idea of playing a game made by myself which made the whole experience really nice, you don’t realize how much this means to you until other people try it for the first time, especially close friends or family. He managed to solve the riddle and gave me some good pointers for the next steps, also found a couple of bugs which I was able to fix.</p><p>The more I thought I was closing in on finishing the game, the more I realized I was far from it and that there were a bunch of things to modify. ‘ What if after killing the spider the player decided not to continue into the next room but came back one room back, he has to be able to step back into where the spider was and not end up fighting the enemy he just killed one more time but instead, find its carcasses.’ That’s something that’s easy to overlook but could ruin the experience of your game. There was maybe a whole day of figuring these kind of situations out and making sure there where fixed.</p><p>I spend a good amount of time towards the end tweeking the game, countless hours implementing details, the name of the console game had to appear nicely, the game had to start in semi full screen, I wanted a nice icon for the game, making sure to use royalty free music found on the interwebs and of course compiling the whole thing. Now one week later from the day I picked up that book in the car, I’m proud to say I’ve completed my first ever game, no its not halo 7 or gta 10, but this one is mine and no one else’s, I stuck my head down and I achieved my goal. I’m planning on posting it to Reddit to see if I could get some people to try it out and tell me if there is anything else I could implement but in the meantime, I’ll be working on my next game, always pushing my knowledge a bit further and learning a lot along the way. If someone like me could focus on an idea and make it a reality, so can you, so can anybody, don’t hold yourself back.</p>
+                    </div>
+                                       
+                    <div class="col-md-3">  
+                        <div class="blog-sidebar hidden-xs hidden-sm">
+                            <div class="blog-about">
+                                <img src="image/PP.png" class="img-responsive img-circle">
+                                <h3>Sébastien Toursel</h3>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+                                 <div class="social-wrapper">
+                                    <ul class="brands brands-inline">
+                                    <li><a href="https://www.facebook.com/profile.php?id=1313624677"><i class="fa fa-facebook  hi-icon-effect-8"></i></a></li>
+                                    <li><a href="https://twitter.com/SebTheGameDev"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://plus.google.com/103490550514465135070/posts"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/s%C3%A9bastien-toursel-523747b3"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>        
+                                </div>
+                            </div>
+                        </div>
+                    </div>  	
+            </div>
+            
+            <div class="blog-about-xs visible-xs visible-sm">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <img src="image/jonathan.png" class="img-responsive img-circle">
+                    </div>
+                    <div class="col-xs-8">  
+                        <h3>John Doe</h3>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+                         <div class="social-wrapper">
+                            <ul class="brands brands-inline">
+                                <li><a href="#"><i class="fa fa-facebook  hi-icon-effect-8"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>       
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==========================
+    	BLOGPOST - END 
+    =========================== -->
+    <!-- COMMENTS - START -->
+   
+    <!-- ==========================
+    	FOOTER - START
+    =========================== -->   
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 scrollpoint sp-effect3">
+                
+               			<ul class="brands brands-inline">
+                            <li><a href="#"><i class="fa fa-facebook  hi-icon-effect-8"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>  
+                    
+                    <p>© Sébastien Toursel 2016 All right reserved. Designed by <a href="http://sebastientoursel.com" target="_blank" class="btn btn-footer">Sébastien Toursel</a></p>
+                </div>   	
+            </div>
+        </div>
+    </section>
+    <!-- ==========================
+    	FOOTER - END 
+    =========================== -->
+    
+    <!-- ==========================
+    	JS 
+    =========================== -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/creative-brands.js"></script>
+    <script src="js/jquery.easy-pie-chart.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+    $(function () { 
+		$("input,textarea").jqBootstrapValidation({
+        	preventSubmit: true,
+			
+			submitSuccess: function($form, event) {
+				event.preventDefault(); // prevent default submit behaviour
+				// get values from FORM
+				var firstname = $("input#firstname").val();
+				var lastname = $("input#lastname").val();
+				var email = $("input#email").val();
+				var message = $("textarea#message").val();
+	
+				$.ajax({
+					url: "send.php",
+					type: "POST",
+					data: {
+						firstname: firstname,
+						lastname: lastname,
+						email: email,
+						message: message
+					},
+					cache: false,
+					success: function() {
+						// Success message
+						$('.contact-alert').html("<div class='alert alert-success'>");
+						$('.contact-alert > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'><i class='fa fa-times'></i></button><strong>Your message has been sent.</strong></div>");
+						//clear all fields
+						$('#contactForm').trigger("reset");
+					},
+					error: function() {
+						// Fail message
+						$('.contact-alert').html("<div class='alert alert-danger'>");
+						$('.contact-alert > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'><i class='fa fa-times'></i></button><strong>Sorry, it seems that my mail server is not responding. Please try again later!</strong></div>");
+						//clear all fields
+						$('#contactForm').trigger("reset");
+					},
+				})
+			}
+		});
+	});
+    </script>
+</body>
+</html>
