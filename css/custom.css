@@ -1791,5 +1791,19 @@ blockquote footer {
 	#blog-header i {
 		font-size:28px;
 	}
+
 }
+
+.particles-js-canvas-el{
+  position: absolute;
+  top:100;
+  left:0;
+
+}
+
+.pppicture{
+	
+}
+
+
 
